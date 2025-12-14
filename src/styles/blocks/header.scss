@@ -8,6 +8,9 @@
   background-size: cover;
   min-height: 100vh;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0 20px;
+  color: rgba(255, 255, 255, 1);
 
   &__nav {
     display: flex;
@@ -16,7 +19,6 @@
     background-color: transparent;
     box-sizing: border-box;
     height: 86px;
-    padding: 0 20px;
 
     &-logo {
       height: 38px;
@@ -26,7 +28,9 @@
       font-size: 38px;
       line-height: 100%;
       letter-spacing: -1.5px;
-      color: rgba(255, 255, 255, 1);
+      margin: 0;
+      margin-block: 0;
+      margin-inline: 0;
     }
 
     &-buttons {
@@ -63,7 +67,6 @@
     font-style: normal;
     font-size: 36px;
     line-height: 100%;
-    color: rgba(255, 255, 255, 1);
     letter-spacing: -1.5px;
     text-align: center;
     justify-content: flex-end;

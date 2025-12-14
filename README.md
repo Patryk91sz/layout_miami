@@ -13,25 +13,5 @@ In this task, you will learn how to implement a landing page. To do that:
 - when you finish the first block of your page deploy it and create a Pull Request with a [DEMO LINK](https://Patryk91sz.github.io/layout_miami/)
 - after each next block do the same (add, commit and push the changes, and deploy the updated demo;
 - check yourself using the [CHECKLIST](https://github.com/mate-academy/layout_miami/blob/master/checklist.md) when finished;
-<!--
- <section class="move-free">
-        <h3>Move Free</h3>
-        <p class="move-free-text">Shift your ride, not gears. Find the fastest way to move in the city as the bike adapts intuitively to power the speed you need.</p>
-      </section>
-      .move-free {
-font-family: Poppins, sans-serif;
-font-weight: 500;
-font-style: normal;
-font-size: 32px;
-line-height: 100%;
-letter-spacing: -1.5px;
-padding-left: 20px;
-padding-top: 60px;
-}
 
-.move-free-text {
-font-size: 23px;
-line-height: 140%;
-padding-top: 64px;
-} -->
 

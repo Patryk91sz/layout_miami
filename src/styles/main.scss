@@ -1,7 +1,10 @@
 @use 'utils';
 @use './blocks/header';
+@use './blocks/main-first';
 
 main {
   background-color: rgba(29, 29, 29, 1);
   color: rgba(255, 255, 255, 1);
+  padding: 0 20px;
+  margin: 0;
 }
