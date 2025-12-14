@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
-      href="src/styles/main.scss"
+      href="src/styles/main.css"
     />
     <script
       src="src/scripts/main.js"
@@ -22,11 +22,22 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="logo">MyBiKE</h1>
-      <h2 class="motto">Take the Streets</h2>
+      <nav class="header__nav">
+        <h1 class="header__nav-logo">MyBiKE</h1>
+        <div class="header__nav-buttons">
+          <button class="header__nav-button header__nav-button--phone">
+            <img class="header__nav-button--phone-icon" src="src/images/phone.svg"
+            alt="phone Icon"/>
+          </button>
+          <button class="header__nav-button header__nav-button--menu">
+            <img class="header__nav-button--menu-icon" src="src/images/menu.svg"
+            alt="menu Icon"/>
+          </button>
+        </div>
+      </nav>
+      <h2 class="header__motto">Take the Streets</h2>
     </header>
     <main>
-
     </main>
   </body>
 </html>
