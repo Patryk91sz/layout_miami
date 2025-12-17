@@ -1,6 +1,8 @@
 @use 'utils';
 @use './blocks/header';
-@use './blocks/main-first';
+@use './blocks/move-free-section';
+@use './blocks/compare-section';
+@use './blocks/details-section';
 
 main {
   background-color: rgba(29, 29, 29, 1);
