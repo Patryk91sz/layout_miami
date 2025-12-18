@@ -1,115 +1,69 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
   margin: 0;
+  margin-block: 0;
+  margin-inline: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
-}
-
-.logo {
-  height: 38px;
-  font-family: Poppins, sans-serif;
-  font-weight: 700;
-  font-style: bold;
-  font-size: 38px;
-  line-height: 100%;
-  letter-spacing: -1.5px;
-  color: rgb(32, 22, 22);
-  box-sizing: border-box;
-  padding: 24px 20px 0;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: yellow;
+  background-color: rgb(29, 29, 29);
+  background-image: url(../images/photos/bike-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0 20px;
+  color: rgb(255, 255, 255);
 }
-
-.motto {
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  box-sizing: border-box;
+  height: 86px;
+}
+.header__nav-logo {
+  height: 38px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 38px;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+  margin: 0;
+  margin-block: 0;
+  margin-inline: 0;
+}
+.header__nav-buttons {
+  display: flex;
+  gap: 27px;
+  height: 24px;
+  width: 72px;
+  border: 0;
+}
+.header__nav-button {
+  border: none;
+  background-color: transparent;
+  height: 24px;
+  width: 24px;
+  padding: 0;
+}
+.header__nav-button--phone-icon {
+  height: 18px;
+  width: 18px;
+}
+.header__nav-button--menu-icon {
+  height: 12px;
+  width: 18px;
+}
+.header__motto {
   height: 36px;
   font-family: Poppins, sans-serif;
   font-weight: 700;
@@ -117,10 +71,136 @@ video {
   font-size: 36px;
   line-height: 100%;
   letter-spacing: -1.5px;
-  color: rgb(32, 22, 22);
-  box-sizing: border-box;
-  align-self: center;
+  text-align: center;
+  justify-content: flex-end;
   padding-bottom: 88px;
+}
+
+.move-free {
+  font-family: Poppins, sans-serif;
+  padding-top: 60px;
+}
+.move-free__title {
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+  font-weight: normal;
+}
+.move-free__text {
+  font-size: 23px;
+  line-height: 140%;
+  padding-top: 32px;
+  font-weight: normal;
+}
+
+.compare__title {
+  height: 32px;
+  padding-top: 92px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -1.5px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.compare__bikes {
+  padding-top: 8px;
+}
+.compare__bike {
+  padding-top: 40px;
+}
+.compare__bike-image {
+  height: 228px;
+  width: 280px;
+}
+.compare__bike-name {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 140%;
+  padding-top: 32px;
+}
+.compare__bike-description {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 140%;
+  padding-top: 8px;
+}
+.compare__bike-price {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 140%;
+  padding-top: 16px;
+}
+
+.details__tittle {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -1.5px;
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 92px;
+}
+.details__detail__photos {
+  display: flex;
+  gap: 20px;
+}
+.details__detail__photos__photo {
+  padding-top: 48px;
+  background-color: transparent;
+}
+.details__detail__tittle {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0;
+  padding-top: 16px;
+}
+.details__detail__text {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0;
+  padding-top: 8px;
+}
+
+.explore {
+  padding-top: 40px;
+  text-align: center;
+}
+.explore__button {
+  height: 56px;
+  width: 278px;
+  color: black;
+  background-color: white;
+  border-radius: 40px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0;
+}
+
+main {
+  background-color: rgb(29, 29, 29);
+  color: rgb(255, 255, 255);
+  padding: 0 20px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
