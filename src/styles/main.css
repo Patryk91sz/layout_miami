@@ -21,6 +21,7 @@
   padding: 0 20px;
   color: rgb(255, 255, 255);
 }
+
 .header__nav {
   display: flex;
   align-items: center;
@@ -29,6 +30,7 @@
   box-sizing: border-box;
   height: 86px;
 }
+
 .header__nav-logo {
   height: 38px;
   font-family: Poppins, sans-serif;
@@ -41,6 +43,7 @@
   margin-block: 0;
   margin-inline: 0;
 }
+
 .header__nav-buttons {
   display: flex;
   gap: 27px;
@@ -48,6 +51,7 @@
   width: 72px;
   border: 0;
 }
+
 .header__nav-button {
   border: none;
   background-color: transparent;
@@ -55,14 +59,17 @@
   width: 24px;
   padding: 0;
 }
+
 .header__nav-button--phone-icon {
   height: 18px;
   width: 18px;
 }
+
 .header__nav-button--menu-icon {
   height: 12px;
   width: 18px;
 }
+
 .header__motto {
   height: 36px;
   font-family: Poppins, sans-serif;
@@ -80,12 +87,14 @@
   font-family: Poppins, sans-serif;
   padding-top: 60px;
 }
+
 .move-free__title {
   font-size: 32px;
   line-height: 100%;
   letter-spacing: -1.5px;
   font-weight: normal;
 }
+
 .move-free__text {
   font-size: 23px;
   line-height: 140%;
@@ -105,16 +114,20 @@
   text-align: center;
   text-transform: capitalize;
 }
+
 .compare__bikes {
   padding-top: 8px;
 }
+
 .compare__bike {
   padding-top: 40px;
 }
+
 .compare__bike-image {
   height: 228px;
   width: 280px;
 }
+
 .compare__bike-name {
   font-family: Poppins, sans-serif;
   font-weight: 700;
@@ -123,6 +136,7 @@
   line-height: 140%;
   padding-top: 32px;
 }
+
 .compare__bike-description {
   font-family: Poppins, sans-serif;
   font-weight: 300;
@@ -131,6 +145,7 @@
   line-height: 140%;
   padding-top: 8px;
 }
+
 .compare__bike-price {
   font-family: Poppins, sans-serif;
   font-weight: 700;
@@ -151,14 +166,17 @@
   text-transform: capitalize;
   padding-top: 92px;
 }
+
 .details__detail__photos {
   display: flex;
   gap: 20px;
 }
+
 .details__detail__photos__photo {
   padding-top: 48px;
   background-color: transparent;
 }
+
 .details__detail__tittle {
   font-family: Poppins, sans-serif;
   font-weight: 700;
@@ -168,6 +186,7 @@
   letter-spacing: 0;
   padding-top: 16px;
 }
+
 .details__detail__text {
   font-family: Poppins, sans-serif;
   font-weight: 400;
@@ -182,6 +201,7 @@
   padding-top: 40px;
   text-align: center;
 }
+
 .explore__button {
   height: 56px;
   width: 278px;

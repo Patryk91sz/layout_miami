@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width initial-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     />
-    <title>Miami</title>
+    <title>My-Bike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
-      href="src/styles/main.css"
+      href="src/styles/main.scss"
     />
     <script
       src="src/scripts/main.js"
@@ -17,10 +21,107 @@
     ></script>
   </head>
   <body>
+
     <header class="header">
-      <h1 class="logo">MyBiKE</h1>
-      <h2 class="motto">Take the Streets</h2>
+      <nav class="header__nav">
+
+        <h1 class="header__nav-logo">MyBiKE</h1>
+
+        <div class="header__nav-buttons">
+          <button class="header__nav-button header__nav-button--phone">
+            <img class="header__nav-button--phone-icon" src="src/images/phone.svg"
+            alt="phone Icon"/>
+          </button>
+          <button class="header__nav-button header__nav-button--menu">
+            <img class="header__nav-button--menu-icon" src="src/images/menu.svg"
+            alt="menu Icon"/>
+          </button>
+        </div>
+      </nav>
+
+      <h2 class="header__motto">Take the Streets</h2>
     </header>
-    <main></main>
+
+    <main class="main-first">
+
+      <section class="move-free">
+        <h3 class="move-free__title">Move Free</h3>
+        <p class="move-free__text">Shift your ride, not<br>
+          gears. Find the fastest way to move in the city as the bike adapts intuitively to power the speed you need.
+        </p>
+      </section>
+
+      <section class="compare">
+        <h3 class="compare__title">Compare bikes</h3>
+
+        <div class="compare__bikes">
+
+          <article class="compare__bike">
+            <img class="compare__bike-image" src="src/images/photos/bike1-mobile.png"
+            alt="bike 1"/>
+            <h4 class="compare__bike-name">Sporty 4</h4>
+            <p class="compare__bike-description">The iconic frame brought to a new performance height as a sporty, active ride.</p>
+            <p class="compare__bike-price">$ 2 590</p>
+          </article>
+
+          <article class="compare__bike">
+            <img class="compare__bike-image" src="src/images/photos/bike2-mobile.png"
+            alt="bike 1"/>
+            <h4 class="compare__bike-name">Ride in town ST</h4>
+            <p class="compare__bike-description">An open frame for an upright riding position as the most comfortable ride in town.</p>
+            <p class="compare__bike-price">$ 2 590</p>
+          </article>
+
+          <article class="compare__bike">
+            <img class="compare__bike-image" src="src/images/photos/bike3-mobile.png"
+            alt="bike 1"/>
+            <h4 class="compare__bike-name">Agile ride 3</h4>
+            <p class="compare__bike-description">The lightweight frame that has earned its street tread as a sleek, agile ride.</p>
+            <p class="compare__bike-price">$ 2 090</p>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="details">
+        <h3 class="details__tittle">The details</h3>
+
+        <article class="details__detail">
+          <div class="details__detail__photos">
+            <img class="details__detail__photos__photo" src="src/images/photos/unlock1-mobile.jpg"
+            alt="auto-unlock1"/>
+            <img class="details__detail__photos__photo" src="src/images/photos/unlock2-mobile.jpg"
+            alt="auto-unlock1"/>
+          </div>
+          <h4 class="details__detail__tittle">Auto Unlock</h4>
+          <p class="details__detail__text">The app senses when you're nearby to unlock automatically. GPS tracking so you know where your bike is and can track it anytime.</p>
+        </article>
+
+        <article class="details__detail">
+          <div class="details__detail__photos">
+            <img class="details__detail__photo" src="src/images/photos/lights1-mobile.jpg"
+            alt="lights1"/>
+            <img class="details__detail__photo" src="src/images/photos/lights2-mobile.jpg"
+            alt="lights2"/>
+          </div>
+          <h4 class="details__detail__tittle">Range & Integrated lights</h4>
+          <p class="details__detail__text">The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</p>
+        </article>
+
+        <article class="details__detail">
+          <div class="details__detail__photos">
+            <img class="details__detail__photos__photo" src="src/images/photos/breakes1-mobile.jpg"
+            alt="auto-unlock1"/>
+            <img class="details__detail__photos__photo" src="src/images/photos/breakes2-mobile.jpg"
+            alt="auto-unlock1"/>
+          </div>
+          <h4 class="details__detail__tittle">Hydraulic disc brakes & Lightweight</h4>
+          <p class="details__detail__text">Brakes with total stopping power the second you make contact. The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</p>
+        </article>
+        <div class="explore">
+          <button class="explore__button" type="button">Explore</button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
