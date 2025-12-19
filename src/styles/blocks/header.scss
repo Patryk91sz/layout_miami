@@ -6,10 +6,13 @@
   background-image: url(../images/photos/bike-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
-  box-sizing: border-box;
-  margin: 0;
+  background-position: right center;
   padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100svh;
+  margin: 0;
+
   color: rgba(255, 255, 255, 1);
 
   &__nav {
@@ -17,7 +20,6 @@
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
-    box-sizing: border-box;
     height: 86px;
 
     &-logo {
@@ -29,12 +31,11 @@
       line-height: 100%;
       letter-spacing: -1.5px;
       margin: 0;
-      margin-block: 0;
-      margin-inline: 0;
     }
 
     &-buttons {
       display: flex;
+      justify-content: flex-end;
       gap: 27px;
       height: 24px;
       width: 72px;
@@ -61,15 +62,21 @@
   }
 
   &__motto {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     height: 36px;
-    font-family: Poppins, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 36px;
-    line-height: 100%;
-    letter-spacing: -1.5px;
-    text-align: center;
-    justify-content: flex-end;
     padding-bottom: 88px;
+
+    &__tittle {
+      font-family: Poppins, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 36px;
+      line-height: 100%;
+      letter-spacing: -1.5px;
+      display: flex;
+      justify-content: center;
+    }
   }
 }

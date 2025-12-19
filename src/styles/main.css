@@ -1,10 +1,12 @@
 * {
   margin: 0;
-  margin-block: 0;
-  margin-inline: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: auto;
 }
 
 .header {
@@ -15,10 +17,12 @@
   background-image: url(../images/photos/bike-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
-  box-sizing: border-box;
-  margin: 0;
+  background-position: right center;
   padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100svh;
+  margin: 0;
   color: rgb(255, 255, 255);
 }
 
@@ -27,7 +31,6 @@
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
-  box-sizing: border-box;
   height: 86px;
 }
 
@@ -40,12 +43,11 @@
   line-height: 100%;
   letter-spacing: -1.5px;
   margin: 0;
-  margin-block: 0;
-  margin-inline: 0;
 }
 
 .header__nav-buttons {
   display: flex;
+  justify-content: flex-end;
   gap: 27px;
   height: 24px;
   width: 72px;
@@ -71,16 +73,22 @@
 }
 
 .header__motto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   height: 36px;
+  padding-bottom: 88px;
+}
+
+.header__motto__tittle {
   font-family: Poppins, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 36px;
   line-height: 100%;
   letter-spacing: -1.5px;
-  text-align: center;
-  justify-content: flex-end;
-  padding-bottom: 88px;
+  display: flex;
+  justify-content: center;
 }
 
 .move-free {
@@ -102,7 +110,14 @@
   font-weight: normal;
 }
 
+.compare {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .compare__title {
+  justify-content: center;
   height: 32px;
   padding-top: 92px;
   font-family: Poppins, sans-serif;
@@ -111,21 +126,18 @@
   font-size: 32px;
   line-height: 32px;
   letter-spacing: -1.5px;
-  text-align: center;
   text-transform: capitalize;
 }
 
 .compare__bikes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-top: 8px;
 }
 
 .compare__bike {
   padding-top: 40px;
-}
-
-.compare__bike-image {
-  height: 228px;
-  width: 280px;
 }
 
 .compare__bike-name {
@@ -155,6 +167,12 @@
   padding-top: 16px;
 }
 
+.details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .details__tittle {
   font-family: Poppins, sans-serif;
   font-weight: 500;
@@ -162,22 +180,25 @@
   font-size: 32px;
   line-height: 32px;
   letter-spacing: -1.5px;
-  text-align: center;
+  justify-content: center;
   text-transform: capitalize;
   padding-top: 92px;
+  padding-bottom: 8px;
 }
 
 .details__detail__photos {
   display: flex;
+  padding-top: 40px;
   gap: 20px;
 }
 
 .details__detail__photos__photo {
-  padding-top: 48px;
   background-color: transparent;
 }
 
 .details__detail__tittle {
+  display: flex;
+  justify-content: center;
   font-family: Poppins, sans-serif;
   font-weight: 700;
   font-style: Bold;
@@ -188,9 +209,10 @@
 }
 
 .details__detail__text {
+  justify-content: center;
   font-family: Poppins, sans-serif;
   font-weight: 400;
-  font-style: Regular;
+  font-style: normal;
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 0;
@@ -221,6 +243,13 @@ main {
   color: rgb(255, 255, 255);
   padding: 0 20px;
   margin: 0;
+}
+
+.photo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
