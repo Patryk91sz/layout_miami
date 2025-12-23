@@ -62,12 +62,14 @@ body {
   background-color: rgb(194, 194, 194);
   color: rgb(29, 29, 29);
 }
+
 .menu__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 24px 35px;
 }
+
 .menu__header--title {
   height: 38px;
   font-family: Poppins, sans-serif;
@@ -78,17 +80,21 @@ body {
   letter-spacing: -1.5px;
   margin: 0;
 }
+
 .menu__header--close-button {
   border: none;
   background-color: transparent;
 }
+
 .menu__header--close-button-icon {
   height: 16px;
   width: 16px;
 }
+
 .menu__main {
   padding: 24px 20px;
 }
+
 .menu__nav--links {
   list-style: none;
   padding: 0;
@@ -97,6 +103,7 @@ body {
   flex-direction: column;
   gap: 32px;
 }
+
 .menu__nav--link {
   text-decoration: none;
   color: rgb(29, 29, 29);
@@ -108,16 +115,19 @@ body {
   vertical-align: middle;
   text-transform: uppercase;
 }
+
 .menu__footer {
   display: flex;
   flex-direction: column;
   padding: 20px 16px;
   gap: 16px;
 }
+
 .menu__footer--phone-link {
   font-size: 16px;
   line-height: 27px;
 }
+
 .menu__footer--cta-btn {
   width: fit-content;
   display: inline-block;
@@ -152,6 +162,7 @@ body {
   min-height: 100svh;
   color: rgb(255, 255, 255);
 }
+
 .header__nav {
   display: flex;
   align-items: center;
@@ -159,6 +170,7 @@ body {
   background-color: transparent;
   height: 86px;
 }
+
 .header__nav--logo {
   height: 38px;
   font-family: Poppins, sans-serif;
@@ -169,6 +181,7 @@ body {
   letter-spacing: -1.5px;
   margin: 0;
 }
+
 .header__nav--buttons {
   display: flex;
   justify-content: flex-end;
@@ -177,6 +190,7 @@ body {
   width: 72px;
   border: 0;
 }
+
 .header__nav--button {
   border: none;
   background-color: transparent;
@@ -184,14 +198,17 @@ body {
   width: 24px;
   padding: 0;
 }
+
 .header__nav--phone-icon {
   height: 18px;
   width: 18px;
 }
+
 .header__nav--menu-icon {
   height: 12px;
   width: 18px;
 }
+
 .header__motto {
   display: flex;
   justify-content: center;
@@ -200,6 +217,7 @@ body {
   padding-bottom: 88px;
   background-color: transparent;
 }
+
 .header__motto--title {
   font-family: Poppins, sans-serif;
   font-weight: 700;
@@ -217,12 +235,14 @@ body {
   padding-top: 60px;
   color: rgb(255, 255, 255);
 }
+
 .move-free__title {
   font-size: 32px;
   line-height: 100%;
   letter-spacing: -1.5px;
   font-weight: normal;
 }
+
 .move-free__text {
   font-size: 23px;
   line-height: 140%;
@@ -235,6 +255,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .compare__title {
   justify-content: center;
   height: 32px;
@@ -247,15 +268,18 @@ body {
   letter-spacing: -1.5px;
   text-transform: capitalize;
 }
+
 .compare__bikes {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 8px;
 }
+
 .compare__bike {
   padding-top: 40px;
 }
+
 .compare__bike-name {
   font-family: Poppins, sans-serif;
   font-weight: 700;
@@ -264,6 +288,7 @@ body {
   line-height: 140%;
   padding-top: 32px;
 }
+
 .compare__bike--price {
   padding-top: 16px;
 }
@@ -273,6 +298,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .details__tittle {
   font-family: Poppins, sans-serif;
   font-weight: 500;
@@ -285,14 +311,17 @@ body {
   padding-top: 92px;
   padding-bottom: 8px;
 }
+
 .details__detail--photos {
   display: flex;
   padding-top: 40px;
   gap: 20px;
 }
+
 .details__detail--photos--photo {
   background-color: transparent;
 }
+
 .details__detail--title {
   display: flex;
   font-family: Poppins, sans-serif;
@@ -304,6 +333,7 @@ body {
   padding-top: 16px;
   padding-bottom: 8px;
 }
+
 .details__detail__text {
   justify-content: center;
   font-family: Poppins, sans-serif;
@@ -319,6 +349,7 @@ body {
   padding-top: 40px;
   text-align: center;
 }
+
 .explore__button {
   width: 278px;
 }
@@ -331,6 +362,7 @@ body {
   margin: 0;
   color: rgb(255, 255, 255);
 }
+
 .footer__background {
   height: 200px;
   width: 100vw;
@@ -345,15 +377,18 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
 .contact-us__title {
   padding-top: 80px;
 }
+
 .contact-us__form {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding-top: 48px;
 }
+
 .contact-us__input {
   height: 48px;
   width: 278;
@@ -366,11 +401,13 @@ body {
   font-size: 14px;
   line-height: 20px;
 }
+
 .contact-us__textarea {
   height: 148px;
   border-radius: 16px;
   padding-top: 14px;
 }
+
 .contact-us__button {
   height: 56px;
   width: 280px;
@@ -393,20 +430,24 @@ body {
 .contact {
   padding-top: 24px;
 }
+
 .contact__item {
   padding-top: 24px;
 }
+
 .contact__label {
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
 }
+
 .contact__value {
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
   padding-top: 8px;
 }
+
 .contact__link {
   text-decoration: none;
   color: rgb(255, 255, 255);

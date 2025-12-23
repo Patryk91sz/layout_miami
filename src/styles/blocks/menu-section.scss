@@ -3,10 +3,10 @@
   color: rgba(29, 29, 29, 1);
 
   &__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 24px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px 35px;
 
     &--title {
       height: 38px;
@@ -31,7 +31,7 @@
   }
 
   &__main {
-  padding: 24px 20px
+    padding: 24px 20px;
   }
 
   &__nav {
