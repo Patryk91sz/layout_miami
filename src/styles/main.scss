@@ -1,19 +1,24 @@
 @use 'utils';
+@use './utils/reset';
+@use './utils/fonts';
+@use './blocks/menu-section';
 @use './blocks/header';
 @use './blocks/move-free-section';
 @use './blocks/compare-section';
 @use './blocks/details-section';
-
-main {
-  background-color: rgba(29, 29, 29, 1);
-  color: rgba(255, 255, 255, 1);
-  padding: 0 20px;
-  margin: 0;
-}
+@use './blocks/footer';
+@use './blocks/contact-us-section';
+@use './blocks/contact-section';
 
 .photo {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+  padding-top: 40px;
+}
+
+.main {
+  padding: 0 20px;
+  box-sizing: border-box;
 }

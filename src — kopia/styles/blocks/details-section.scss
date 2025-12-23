@@ -17,18 +17,19 @@
   }
 
   &__detail {
-    &--photos {
+    &__photos {
       display: flex;
       padding-top: 40px;
       gap: 20px;
 
-      &--photo {
+      &__photo {
         background-color: transparent;
       }
     }
 
-    &--title {
+    &__tittle {
       display: flex;
+      justify-content: center;
       font-family: Poppins, sans-serif;
       font-weight: 700;
       font-style: Bold;
@@ -36,7 +37,6 @@
       line-height: 140%;
       letter-spacing: 0;
       padding-top: 16px;
-      padding-bottom: 8px;
     }
 
     &__text {
@@ -57,6 +57,16 @@
   text-align: center;
 
   &__button {
+    height: 56px;
     width: 278px;
+    color: black;
+    background-color: white;
+    border-radius: 40px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0;
   }
 }

@@ -1,40 +1,74 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   min-width: 320px;
   overflow-x: auto;
+  font-family: Poppins, sans-serif;
+  background-color: rgb(29, 29, 29);
+  box-sizing: border-box;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: rgb(29, 29, 29);
-  background-image: url(../images/photos/bike-mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right center;
-  padding: 0 20px;
-  box-sizing: border-box;
+.h3-title {
+  height: 32px;
   width: 100%;
-  min-height: 100svh;
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -1.5px;
+  padding-top: 92px;
+  text-transform: capitalize;
   color: rgb(255, 255, 255);
 }
 
-.header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: transparent;
-  height: 86px;
+.h4-title {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 140%;
+  color: rgb(255, 255, 255);
 }
 
-.header__nav-logo {
+.description-title {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 140%;
+  padding-top: 8px;
+  color: rgb(255, 255, 255);
+}
+
+.button {
+  height: 56px;
+  color: black;
+  background-color: white;
+  border-radius: 40px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0;
+}
+
+.menu {
+  background-color: rgb(194, 194, 194);
+  color: rgb(29, 29, 29);
+}
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px 35px;
+}
+.menu__header--title {
   height: 38px;
   font-family: Poppins, sans-serif;
   font-weight: 700;
@@ -44,8 +78,98 @@ body {
   letter-spacing: -1.5px;
   margin: 0;
 }
+.menu__header--close-button {
+  border: none;
+  background-color: transparent;
+}
+.menu__header--close-button-icon {
+  height: 16px;
+  width: 16px;
+}
+.menu__main {
+  padding: 24px 20px;
+}
+.menu__nav--links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.menu__nav--link {
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.menu__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px;
+  gap: 16px;
+}
+.menu__footer--phone-link {
+  font-size: 16px;
+  line-height: 27px;
+}
+.menu__footer--cta-btn {
+  width: fit-content;
+  display: inline-block;
+  border-bottom: 2px solid rgb(29, 29, 29);
+  padding-bottom: 6px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
 
-.header__nav-buttons {
+.menu-link {
+  font-style: SemiBold;
+  text-decoration: none;
+  font-weight: 600;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: rgb(29, 29, 29);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../images/photos/bike_mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 85% center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  min-height: 100svh;
+  color: rgb(255, 255, 255);
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  height: 86px;
+}
+.header__nav--logo {
+  height: 38px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 38px;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+  margin: 0;
+}
+.header__nav--buttons {
   display: flex;
   justify-content: flex-end;
   gap: 27px;
@@ -53,34 +177,30 @@ body {
   width: 72px;
   border: 0;
 }
-
-.header__nav-button {
+.header__nav--button {
   border: none;
   background-color: transparent;
   height: 24px;
   width: 24px;
   padding: 0;
 }
-
-.header__nav-button--phone-icon {
+.header__nav--phone-icon {
   height: 18px;
   width: 18px;
 }
-
-.header__nav-button--menu-icon {
+.header__nav--menu-icon {
   height: 12px;
   width: 18px;
 }
-
 .header__motto {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: 36px;
   padding-bottom: 88px;
+  background-color: transparent;
 }
-
-.header__motto__tittle {
+.header__motto--title {
   font-family: Poppins, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -89,20 +209,20 @@ body {
   letter-spacing: -1.5px;
   display: flex;
   justify-content: center;
+  background-color: transparent;
 }
 
 .move-free {
   font-family: Poppins, sans-serif;
   padding-top: 60px;
+  color: rgb(255, 255, 255);
 }
-
 .move-free__title {
   font-size: 32px;
   line-height: 100%;
   letter-spacing: -1.5px;
   font-weight: normal;
 }
-
 .move-free__text {
   font-size: 23px;
   line-height: 140%;
@@ -115,7 +235,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .compare__title {
   justify-content: center;
   height: 32px;
@@ -128,18 +247,15 @@ body {
   letter-spacing: -1.5px;
   text-transform: capitalize;
 }
-
 .compare__bikes {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 8px;
 }
-
 .compare__bike {
   padding-top: 40px;
 }
-
 .compare__bike-name {
   font-family: Poppins, sans-serif;
   font-weight: 700;
@@ -148,22 +264,7 @@ body {
   line-height: 140%;
   padding-top: 32px;
 }
-
-.compare__bike-description {
-  font-family: Poppins, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 140%;
-  padding-top: 8px;
-}
-
-.compare__bike-price {
-  font-family: Poppins, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 140%;
+.compare__bike--price {
   padding-top: 16px;
 }
 
@@ -172,7 +273,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .details__tittle {
   font-family: Poppins, sans-serif;
   font-weight: 500;
@@ -185,20 +285,16 @@ body {
   padding-top: 92px;
   padding-bottom: 8px;
 }
-
-.details__detail__photos {
+.details__detail--photos {
   display: flex;
   padding-top: 40px;
   gap: 20px;
 }
-
-.details__detail__photos__photo {
+.details__detail--photos--photo {
   background-color: transparent;
 }
-
-.details__detail__tittle {
+.details__detail--title {
   display: flex;
-  justify-content: center;
   font-family: Poppins, sans-serif;
   font-weight: 700;
   font-style: Bold;
@@ -206,8 +302,8 @@ body {
   line-height: 140%;
   letter-spacing: 0;
   padding-top: 16px;
+  padding-bottom: 8px;
 }
-
 .details__detail__text {
   justify-content: center;
   font-family: Poppins, sans-serif;
@@ -223,26 +319,97 @@ body {
   padding-top: 40px;
   text-align: center;
 }
-
 .explore__button {
-  height: 56px;
   width: 278px;
-  color: black;
-  background-color: white;
-  border-radius: 40px;
-  font-family: Poppins, sans-serif;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 16px;
-  line-height: 27px;
-  letter-spacing: 0;
 }
 
-main {
-  background-color: rgb(29, 29, 29);
-  color: rgb(255, 255, 255);
-  padding: 0 20px;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
   margin: 0;
+  color: rgb(255, 255, 255);
+}
+.footer__background {
+  height: 200px;
+  width: 100vw;
+  background-image: url(../images/photos/przejscie_mobile.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+.contact-us {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-us__title {
+  padding-top: 80px;
+}
+.contact-us__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 48px;
+}
+.contact-us__input {
+  height: 48px;
+  width: 278;
+  border-radius: 40px;
+  padding-left: 16px;
+  background-color: rgb(248, 248, 250);
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 20px;
+}
+.contact-us__textarea {
+  height: 148px;
+  border-radius: 16px;
+  padding-top: 14px;
+}
+.contact-us__button {
+  height: 56px;
+  width: 280px;
+  border-radius: 40px;
+}
+
+.container-button {
+  padding-top: 32px;
+}
+
+.contact-us__title-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  box-sizing: border-box;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+
+.contact {
+  padding-top: 24px;
+}
+.contact__item {
+  padding-top: 24px;
+}
+.contact__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+.contact__value {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  padding-top: 8px;
+}
+.contact__link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .photo {
@@ -250,6 +417,12 @@ main {
   height: auto;
   display: block;
   margin: 0 auto;
+  padding-top: 40px;
+}
+
+.main {
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=main.css.map */
