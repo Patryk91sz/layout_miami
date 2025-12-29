@@ -17,18 +17,19 @@
   }
 
   &__detail {
-    &--photos {
+    &__photos {
       display: flex;
       padding-top: 40px;
       gap: 20px;
 
-      &--photo {
+      &__photo {
         background-color: transparent;
       }
     }
 
-    &--title {
+    &__tittle {
       display: flex;
+      justify-content: center;
       font-family: Poppins, sans-serif;
       font-weight: 700;
       font-style: Bold;
