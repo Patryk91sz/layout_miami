@@ -1,3 +1,4 @@
+@use '../utils/mixins' as *;
 
 .h3-title {
   height: 32px;
@@ -12,7 +13,8 @@
   padding-top: 92px;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 1);
-  @media (min-width: 744px) {
+
+  @include for-tablet {
     font-size: 48px;
   }
 }
@@ -33,7 +35,8 @@
   padding-top: 8px;
   color: rgba(255, 255, 255, 1);
   width: 280px;
-   @media (min-width: 744px) {
+
+   @include for-tablet {
     width: 392px;
   }
 

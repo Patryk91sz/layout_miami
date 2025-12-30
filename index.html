@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
-      href="src/styles/main.css"
+      href="src/styles/main.scss"
     />
     <script
       src="src/scripts/main.js"
@@ -23,19 +23,19 @@
   <body>
 
     <header class="header" id="home">
+      <h1 class="header__logo">MyBiKE</h1>
+
       <nav class="header__nav">
 
-        <h1 class="header__nav--logo">MyBiKE</h1>
-
-        <div class="header__nav--buttons">
-          <button class="header__nav--button">
-            <img class="header__nav--phone-icon" src="src/images/phone.svg"
+        <div class="header__nav-buttons">
+          <button class="header__nav-button">
+            <img class="header__nav-phone-icon" src="src/images/phone.svg"
             alt="phone Icon"/>
           </button>
 
-          <button class="header__nav--button">
+          <button class="header__nav-button">
             <a href="#menu">
-              <img class="header__nav--menu-icon" src="src/images/menu.svg"
+              <img class="header__nav-menu-icon" src="src/images/menu.svg"
             alt="menu Icon"/>
             </a>
           </button>
@@ -44,7 +44,7 @@
       </nav>
 
       <div class="header__motto">
-        <h2 class="header__motto--title">Take the Streets</h2>
+        <h2 class="header__motto-title">Take the Streets</h2>
       </div>
 
     </header>
@@ -70,26 +70,26 @@
             <img class="photo" src="src/images/photos/bike1_mobile.jpg"
             alt="Bike Sporty 4"/>
 
-            <h4 class="compare__bike--name h4-title">Sporty 4</h4>
+            <h4 class="compare__bike-name h4-title">Sporty 4</h4>
             <p class="description-title">The iconic frame brought to a new performance height as a sporty, active ride.</p>
-            <p class="compare__bike--price h4-title">$ 2 590</p>
+            <p class="compare__bike-price h4-title">$ 2 590</p>
           </article>
 
           <article class="compare__bike">
             <img class="photo" src="src/images/photos/bike2_mobile.jpg"
             alt="Ride in town ST"/>
-            <h4 class="compare__bike--name h4-title">Ride in town ST</h4>
+            <h4 class="compare__bike-name h4-title">Ride in town ST</h4>
             <p class="description-title">An open frame for an upright riding position as the most comfortable ride in town.</p>
-            <p class="compare__bike--price h4-title">$ 2 590</p>
+            <p class="compare__bike-price h4-title">$ 2 590</p>
           </article>
 
           <article class="compare__bike">
             <img class="photo" src="src/images/photos/bike3_mobile.jpg"
 
             alt="Agile ride 3"/>
-            <h4 class="compare__bike--name h4-title">Agile ride 3</h4>
+            <h4 class="compare__bike-name h4-title">Agile ride 3</h4>
             <p class="description-title">The lightweight frame that has earned its street tread as a sleek, agile ride.</p>
-            <p class="compare__bike--price h4-title">$ 2 090</p>
+            <p class="compare__bike-price h4-title">$ 2 090</p>
           </article>
 
         </div>
@@ -101,42 +101,41 @@
 
         <article class="details__detail">
 
-          <div class="details__detail--photos">
-            <img class="details__detail--photo photo" src="src/images/photos/unlock1_mobile.jpg"
+          <div class="details__detail-photos">
+            <img class="details__detail-photo photo" src="src/images/photos/unlock1_mobile.jpg"
             alt="Auto Unlock-1"/>
-            <img class="details__detail--photo photo" src="src/images/photos/unlock2_mobile.jpg"
+            <img class="details__detail-photo photo" src="src/images/photos/unlock2_mobile.jpg"
             alt="Auto Unlock-2"/>
           </div>
 
-          <h4 class="details__detail--title h4-title">Auto Unlock</h4>
-
+          <h4 class="details__detail-title h4-title">Auto Unlock</h4>
           <p class="description-title">The app senses when you're nearby to unlock automatically. GPS tracking so you know where your bike is and can track it anytime.</p>
         </article>
 
         <article class="details__detail">
 
-          <div class="details__detail--photos">
-            <img class="details__detail--photo photo" src="src/images/photos/light1_mobile.jpg"
+          <div class="details__detail-photos">
+            <img class="details__detail-photo photo" src="src/images/photos/light1_mobile.jpg"
             alt="lights1"/>
-            <img class="details__detail--photo photo" src="src/images/photos/light2_mobile.jpg"
+            <img class="details__detail-photo photo" src="src/images/photos/light2_mobile.jpg"
             alt="lights2"/>
           </div>
 
-          <h4 class="details__detail--title h4-title">Range & Integrated lights</h4>
+          <h4 class="details__detail-title h4-title">Range & Integrated lights</h4>
 
           <p class="description-title">The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</p>
         </article>
 
         <article class="details__detail">
 
-          <div class="details__detail--photos">
-            <img class="details__detail--photo photo" src="src/images/photos/breakes1_mobile.jpg"
+          <div class="details__detail-photos">
+            <img class="details__detail-photo photo" src="src/images/photos/breakes1_mobile.jpg"
             alt="breakes1"/>
-            <img class="details__detail--photo photo" src="src/images/photos/breakes2_mobile.jpg"
+            <img class="details__detail-photo photo" src="src/images/photos/breakes2_mobile.jpg"
             alt="breakes2"/>
           </div>
 
-          <h4 class="details__detail--title h4-title">Hydraulic disc brakes & Lightweight</h4>
+          <h4 class="details__detail-title h4-title">Hydraulic disc brakes & Lightweight</h4>
 
           <p class="description-title">Brakes with total stopping power the second you make contact. The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</p>
         </article>
@@ -218,34 +217,34 @@
 
     <section class="menu" id="menu">
       <header class="menu__header">
-        <h2 class="menu__header--title">MyBiKE</h2>
-        <a class="menu__header--close-button" type="button"
+        <h2 class="menu__header-title">MyBiKE</h2>
+        <a class="menu__header-close-button" type="button"
         href="#home">
-          <img class="menu__header--close-button-icon" src="src/images/Icon-Close-black.svg"
+          <img class="menu__header-close-button-icon" src="src/images/Icon-Close-black.svg"
           alt="close Icon"/>
         </a>
       </header>
 
       <main class="menu__main">
         <nav class="menu__nav">
-          <ul class="menu__nav--links">
-            <li ><a   class="menu__nav--link" href="#home">Home</a></li>
-            <li><a class="menu__nav--link" href="#about">About Us</a></li>
-            <li><a class="menu__nav--link" href="#compare">Compare Bikes</a></li>
-            <li><a class="menu__nav--link" href="#details">Details</a></li>
-            <li><a class="menu__nav--link" href="#contacts">Contacts</a></li>
+          <ul class="menu__nav-links">
+            <li ><a   class="menu__nav-link" href="#home">Home</a></li>
+            <li><a class="menu__nav-link" href="#about">About Us</a></li>
+            <li><a class="menu__nav-link" href="#compare">Compare Bikes</a></li>
+            <li><a class="menu__nav-link" href="#details">Details</a></li>
+            <li><a class="menu__nav-link" href="#contacts">Contacts</a></li>
           </ul>
         </nav>
       </main>
 
       <footer class="menu__footer">
         <address class="contact">
-          <a class="menu__footer--phone-link menu-link" href="tel:+48123123123">
+          <a class="menu__footer-phone-link menu-link" href="tel:+48123123123">
             +1 234 5555-55-55
           </a>
         </address>
 
-        <a class="menu__footer--cta-btn menu-link" href="/book-test-ride" >
+        <a class="menu__footer-cta-btn menu-link" href="/book-test-ride" >
           Book a test ride
         </a>
       </footer>
