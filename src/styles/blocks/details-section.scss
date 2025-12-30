@@ -1,10 +1,11 @@
 .details {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
+
+  grid-column: 1 / 4;
 
   &__tittle {
-    font-family: Poppins, sans-serif;
     font-weight: 500;
     font-style: Medium;
     font-size: 32px;
@@ -17,19 +18,18 @@
   }
 
   &__detail {
-    &--photos {
+    &-photos {
       display: flex;
       padding-top: 40px;
       gap: 20px;
 
-      &--photo {
+      &-photo {
         background-color: transparent;
       }
     }
 
-    &--title {
+    &-title {
       display: flex;
-      font-family: Poppins, sans-serif;
       font-weight: 700;
       font-style: Bold;
       font-size: 24px;
@@ -41,7 +41,6 @@
 
     &__text {
       justify-content: center;
-      font-family: Poppins, sans-serif;
       font-weight: 400;
       font-style: normal;
       font-size: 16px;

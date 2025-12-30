@@ -1,6 +1,6 @@
-@use 'utils';
 @use './utils/reset';
-@use './utils/fonts';
+@use './utils/mixins' as *;
+@use './blocks/titles';
 @use './blocks/menu-section';
 @use './blocks/header';
 @use './blocks/move-free-section';
@@ -19,6 +19,11 @@
 }
 
 .main {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, minmax(130px, 1fr));
+  gap: 20px;
+
   padding: 0 20px;
   box-sizing: border-box;
 }

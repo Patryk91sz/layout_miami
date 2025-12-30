@@ -3,6 +3,8 @@
   justify-content: center;
   flex-wrap: wrap;
 
+  grid-column: 1 / 3;
+
   &__title {
     justify-content: center;
     height: 32px;
@@ -35,7 +37,7 @@
       padding-top: 32px;
     }
 
-    &--price {
+    &-price {
       padding-top: 16px;
     }
   }

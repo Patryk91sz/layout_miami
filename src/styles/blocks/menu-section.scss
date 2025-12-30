@@ -18,7 +18,7 @@
     align-items: center;
     padding: 20px 24px 35px;
 
-    &--title {
+    &-title {
       height: 38px;
       font-family: Poppins, sans-serif;
       font-weight: 700;
@@ -45,7 +45,7 @@
   }
 
   &__nav {
-    &--links {
+    &-links {
       list-style: none;
       padding: 0;
       margin: 0;
@@ -54,7 +54,7 @@
       gap: 32px;
     }
 
-    &--link {
+    &-link {
       text-decoration: none;
       color: rgba(29, 29, 29, 1);
       font-weight: 600;
@@ -72,12 +72,12 @@
     padding: 20px 16px;
     gap: 16px;
 
-    &--phone-link {
+    &-phone-link {
       font-size: 16px;
       line-height: 27px;
     }
 
-    &--cta-btn {
+    &-cta-btn {
       width: fit-content;
       display: inline-block;
       border-bottom: 2px solid rgba(29, 29, 29, 1);

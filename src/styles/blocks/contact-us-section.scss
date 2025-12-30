@@ -1,9 +1,12 @@
 .contact-us {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+
+  grid-column: 1 / -1;
 
   &__title {
     padding-top: 80px;
+    grid-column: 1 / -1;
   }
 
   &__form {
@@ -44,10 +47,10 @@
 }
 
 .contact-us__title-container {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0 20px;
   box-sizing: border-box;
   gap: 24px;
   padding-bottom: 120px;
+
+  grid-column: 1 / 4;
 }

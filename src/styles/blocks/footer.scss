@@ -1,7 +1,9 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, minmax(130px, 1fr));
+  gap: 20px;
+
   width: 100%;
   margin: 0;
   color: rgba(255, 255, 255, 1);
