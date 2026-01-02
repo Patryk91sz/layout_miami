@@ -211,19 +211,24 @@ body {
     background-image: url(../images/photos/bike_tab.jpg);
     grid-template-columns: repeat(6, 80px);
     gap: 24px;
-    justify-content: center;
+  }
+}
+@media (min-width: 1260px) {
+  .header {
+    height: 711px;
+    background-image: url(../images/photos/bike.jpg);
+    background-position: right center;
+    grid-template-columns: repeat(12, 63px);
   }
 }
 .header__logo {
   display: flex;
   align-items: center;
   height: 86px;
-  font-family: Poppins, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 38px;
   line-height: 100%;
-  letter-spacing: -1.5px;
   margin: 0;
   grid-column: 1/2;
   grid-row: 1/2;
@@ -248,6 +253,13 @@ body {
   .header__nav {
     height: 128px;
     grid-column: 6/-1;
+    grid-row: 1/2;
+  }
+}
+@media (min-width: 1260px) {
+  .header__nav {
+    height: 128px;
+    grid-column: 11/-1;
     grid-row: 1/2;
   }
 }
@@ -311,11 +323,20 @@ body {
   .header__motto {
     grid-column: 1/-1;
     grid-row: 2/3;
+    height: 64px;
     align-self: center;
   }
 }
+@media (min-width: 1260px) {
+  .header__motto {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    height: 80px;
+    align-self: flex-start;
+    padding-top: 60px;
+  }
+}
 .header__motto-title {
-  font-family: Poppins, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 36px;
@@ -330,6 +351,11 @@ body {
     font-size: 64px;
   }
 }
+@media (min-width: 1260px) {
+  .header__motto-title {
+    font-size: 80px;
+  }
+}
 
 .move-free {
   padding-top: 60px;
@@ -340,6 +366,15 @@ body {
   .move-free {
     display: grid;
     grid-template-columns: repeat(6, 80px);
+    gap: 24px;
+    justify-content: center;
+    align-items: start;
+    padding-top: 120px;
+  }
+}
+@media (min-width: 1260px) {
+  .move-free {
+    grid-template-columns: repeat(12, 63px);
     gap: 24px;
     justify-content: center;
     align-items: start;
@@ -359,15 +394,31 @@ body {
     grid-row: 1/2;
   }
 }
+@media (min-width: 1260px) {
+  .move-free__title {
+    font-size: 64px;
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+}
 .move-free__text {
   font-size: 23px;
   line-height: 140%;
   padding-top: 32px;
   font-weight: normal;
+  width: 280px;
 }
 @media (min-width: 744px) {
   .move-free__text {
     grid-column: 4/7;
+    grid-row: 1/2;
+    padding: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 744px) and (min-width: 1260px) {
+  .move-free__text {
+    grid-column: 6/12;
     grid-row: 1/2;
     padding: 0;
   }

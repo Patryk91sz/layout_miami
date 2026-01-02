@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin for-desktop {
+  @media (min-width: 1260px) {
+    @content;
+  }
+}

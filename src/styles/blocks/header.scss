@@ -23,19 +23,23 @@
     background-image: url(../images/photos/bike_tab.jpg);
     grid-template-columns: repeat(6, 80px);
     gap: 24px;
-    justify-content: center;
+  }
+
+  @include for-desktop {
+    height: 711px;
+    background-image: url(../images/photos/bike.jpg);
+    background-position: right center;
+    grid-template-columns: repeat(12, 63px);
   }
 
   &__logo {
     display: flex;
     align-items: center;
     height: 86px;
-    font-family: Poppins, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 38px;
     line-height: 100%;
-    letter-spacing: -1.5px;
     margin: 0;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -59,6 +63,12 @@
     @include for-tablet {
       height: 128px;
       grid-column: 6 / -1;
+      grid-row: 1 / 2;
+    }
+
+    @include for-desktop {
+      height: 128px;
+      grid-column: 11 / -1;
       grid-row: 1 / 2;
     }
 
@@ -122,11 +132,19 @@
     @include for-tablet {
       grid-column: 1 / -1;
       grid-row: 2 / 3;
+      height: 64px;
       align-self: center;
     }
 
+    @include for-desktop {
+      grid-column: 1 / -1;
+      grid-row: 2 / 3;
+      height: 80px;
+      align-self: flex-start;
+      padding-top: 60px;
+    }
+
     &-title {
-      font-family: Poppins, sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 36px;
@@ -138,6 +156,10 @@
 
       @include for-tablet {
         font-size: 64px;
+      }
+
+      @include for-desktop {
+        font-size: 80px;
       }
     }
   }
