@@ -10,7 +10,6 @@
   font-size: 32px;
   line-height: 32px;
   letter-spacing: -1.5px;
-  padding-top: 92px;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 1);
 
@@ -36,10 +35,9 @@
   color: rgba(255, 255, 255, 1);
   width: 280px;
 
-   @include for-tablet {
+  @include for-tablet {
     width: 392px;
   }
-
 }
 
 .button {
@@ -49,8 +47,8 @@
   border-radius: 40px;
   font-family: Poppins, sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 16px;
   line-height: 27px;
   letter-spacing: 0;
+  box-sizing: border-box;
 }

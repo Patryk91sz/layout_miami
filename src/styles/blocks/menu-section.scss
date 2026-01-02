@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .menu {
   position: fixed;
   top: 0;
@@ -7,6 +9,13 @@
   transition: transform 0.3s ease-in-out;
   background-color: rgba(194, 194, 194, 1);
   color: rgba(29, 29, 29, 1);
+  height: 568px;
+  width: 320px;
+
+  @include for-tablet {
+    height: 630px;
+    width: 744px;
+  }
 
   &:target {
     transform: translateX(0);
@@ -14,13 +23,19 @@
 
   &__header {
     display: flex;
+    height: 110px;
     justify-content: space-between;
     align-items: center;
     padding: 20px 24px 35px;
+    width: 320px;
+
+    @include for-tablet {
+      width: 744px;
+      padding: 20px 72px 35px;
+    }
 
     &-title {
       height: 38px;
-      font-family: Poppins, sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 38px;
@@ -42,10 +57,16 @@
 
   &__main {
     padding: 24px 20px;
+
+    @include for-tablet {
+      padding: 24px 72px;
+    }
   }
 
   &__nav {
     &-links {
+      height: 199px;
+      width: 238px;
       list-style: none;
       padding: 0;
       margin: 0;
@@ -66,20 +87,26 @@
       text-transform: uppercase;
     }
   }
-  
+
   &__footer {
     display: flex;
     flex-direction: column;
-    padding: 20px 16px;
+    height: 67px;
+    width: auto;
+    padding: 40px 20px;
     gap: 16px;
+
+    @include for-tablet {
+      padding: 40px 72px;
+    }
 
     &-phone-link {
       font-size: 16px;
       line-height: 27px;
+      width: 155px;
     }
 
     &-cta-btn {
-      width: fit-content;
       display: inline-block;
       border-bottom: 2px solid rgba(29, 29, 29, 1);
       padding-bottom: 6px;
@@ -91,6 +118,8 @@
 }
 
 .menu-link {
+  display: inline-flex;
+  width: fit-content;
   font-style: SemiBold;
   text-decoration: none;
   font-weight: 600;

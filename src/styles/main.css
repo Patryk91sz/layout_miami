@@ -1,11 +1,14 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+html,
 body {
-  min-width: 320px;
-  overflow-x: auto;
+  overflow-x: hidden;
   font-family: Poppins, sans-serif;
   background-color: rgb(29, 29, 29);
   box-sizing: border-box;
@@ -21,7 +24,6 @@ body {
   font-size: 32px;
   line-height: 32px;
   letter-spacing: -1.5px;
-  padding-top: 92px;
   text-transform: capitalize;
   color: rgb(255, 255, 255);
 }
@@ -61,10 +63,10 @@ body {
   border-radius: 40px;
   font-family: Poppins, sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 16px;
   line-height: 27px;
   letter-spacing: 0;
+  box-sizing: border-box;
 }
 
 .menu {
@@ -76,19 +78,34 @@ body {
   transition: transform 0.3s ease-in-out;
   background-color: rgb(194, 194, 194);
   color: rgb(29, 29, 29);
+  height: 568px;
+  width: 320px;
+}
+@media (min-width: 744px) {
+  .menu {
+    height: 630px;
+    width: 744px;
+  }
 }
 .menu:target {
   transform: translateX(0);
 }
 .menu__header {
   display: flex;
+  height: 110px;
   justify-content: space-between;
   align-items: center;
   padding: 20px 24px 35px;
+  width: 320px;
+}
+@media (min-width: 744px) {
+  .menu__header {
+    width: 744px;
+    padding: 20px 72px 35px;
+  }
 }
 .menu__header-title {
   height: 38px;
-  font-family: Poppins, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 38px;
@@ -107,7 +124,14 @@ body {
 .menu__main {
   padding: 24px 20px;
 }
+@media (min-width: 744px) {
+  .menu__main {
+    padding: 24px 72px;
+  }
+}
 .menu__nav-links {
+  height: 199px;
+  width: 238px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -129,15 +153,22 @@ body {
 .menu__footer {
   display: flex;
   flex-direction: column;
-  padding: 20px 16px;
+  height: 67px;
+  width: auto;
+  padding: 40px 20px;
   gap: 16px;
+}
+@media (min-width: 744px) {
+  .menu__footer {
+    padding: 40px 72px;
+  }
 }
 .menu__footer-phone-link {
   font-size: 16px;
   line-height: 27px;
+  width: 155px;
 }
 .menu__footer-cta-btn {
-  width: fit-content;
   display: inline-block;
   border-bottom: 2px solid rgb(29, 29, 29);
   padding-bottom: 6px;
@@ -147,6 +178,8 @@ body {
 }
 
 .menu-link {
+  display: inline-flex;
+  width: fit-content;
   font-style: SemiBold;
   text-decoration: none;
   font-weight: 600;
@@ -174,9 +207,11 @@ body {
 }
 @media (min-width: 744px) {
   .header {
+    height: 628px;
     background-image: url(../images/photos/bike_tab.jpg);
     grid-template-columns: repeat(6, 80px);
     gap: 24px;
+    justify-content: center;
   }
 }
 .header__logo {
@@ -269,7 +304,7 @@ body {
   grid-row: 2/3;
   align-self: end;
   height: 36px;
-  padding-bottom: 88px;
+  padding-bottom: 120px;
   background-color: transparent;
 }
 @media (min-width: 744px) {
@@ -299,7 +334,17 @@ body {
 .move-free {
   padding-top: 60px;
   color: rgb(255, 255, 255);
-  grid-column: 1/3;
+  min-width: 280px;
+}
+@media (min-width: 744px) {
+  .move-free {
+    display: grid;
+    grid-template-columns: repeat(6, 80px);
+    gap: 24px;
+    justify-content: center;
+    align-items: start;
+    padding-top: 120px;
+  }
 }
 .move-free__title {
   font-size: 32px;
@@ -310,6 +355,8 @@ body {
 @media (min-width: 744px) {
   .move-free__title {
     font-size: 48px;
+    grid-column: 1/6;
+    grid-row: 1/2;
   }
 }
 .move-free__text {
@@ -318,24 +365,24 @@ body {
   padding-top: 32px;
   font-weight: normal;
 }
+@media (min-width: 744px) {
+  .move-free__text {
+    grid-column: 4/7;
+    grid-row: 1/2;
+    padding: 0;
+  }
+}
 
 .compare {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  grid-column: 1/3;
-}
-.compare__title {
-  justify-content: center;
-  height: 32px;
   padding-top: 92px;
-  font-family: Poppins, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 32px;
-  line-height: 32px;
-  letter-spacing: -1.5px;
-  text-transform: capitalize;
+}
+@media (min-width: 744px) {
+  .compare {
+    padding-top: 132px;
+  }
 }
 .compare__bikes {
   display: flex;
@@ -346,8 +393,12 @@ body {
 .compare__bike {
   padding-top: 40px;
 }
+@media (min-width: 744px) {
+  .compare__bike {
+    padding-top: 48px;
+  }
+}
 .compare__bike-name {
-  font-family: Poppins, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
@@ -361,24 +412,40 @@ body {
 .details {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  grid-column: 1/4;
-}
-.details__tittle {
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 32px;
-  line-height: 32px;
-  letter-spacing: -1.5px;
-  justify-content: center;
-  text-transform: capitalize;
+  align-items: center;
   padding-top: 92px;
+}
+@media (min-width: 744px) {
+  .details {
+    display: grid;
+    grid-template-columns: repeat(6, 80px);
+    gap: 24px;
+    justify-content: center;
+    padding-top: 120px;
+  }
+}
+.details__title {
   padding-bottom: 8px;
+}
+@media (min-width: 744px) {
+  .details__title {
+    grid-column: 1/7;
+  }
+}
+@media (min-width: 744px) {
+  .details__detail {
+    grid-column: 1/7;
+  }
 }
 .details__detail-photos {
   display: flex;
   padding-top: 40px;
   gap: 20px;
+}
+@media (min-width: 744px) {
+  .details__detail-photos {
+    gap: 24px;
+  }
 }
 .details__detail-photos-photo {
   background-color: transparent;
@@ -393,7 +460,7 @@ body {
   padding-top: 16px;
   padding-bottom: 8px;
 }
-.details__detail__text {
+.details__detail-text {
   justify-content: center;
   font-weight: 400;
   font-style: normal;
@@ -402,52 +469,100 @@ body {
   letter-spacing: 0;
   padding-top: 8px;
 }
+@media (min-width: 744px) {
+  .details__detail-text {
+    width: 600px;
+  }
+}
 
 .explore {
   padding-top: 40px;
-  text-align: center;
+  width: 278px;
+  background-color: white;
+  margin: 0 auto;
 }
 .explore__button {
   width: 278px;
+  border: none;
+}
+@media (min-width: 744px) {
+  .explore__button {
+    width: 392px;
+  }
+}
+
+.container-exploreButton {
+  padding-top: 40px;
+}
+@media (min-width: 744px) {
+  .container-exploreButton {
+    padding-top: 48px;
+    grid-column: 2/6;
+  }
 }
 
 .footer {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(2, minmax(130px, 1fr));
-  gap: 20px;
   width: 100%;
   margin: 0;
+  box-sizing: border-box;
   color: rgb(255, 255, 255);
+}
+.footer__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 48px 20px 120px;
+}
+@media (min-width: 744px) {
+  .footer__content {
+    display: grid;
+    grid-template-columns: repeat(6, 80px);
+    gap: 24px;
+    justify-content: center;
+    padding: 48px 20px 102px;
+  }
 }
 .footer__background {
   height: 200px;
-  width: 100vw;
+  width: 100%;
   background-image: url(../images/photos/przejscie_mobile.jpg);
-  background-position: right center;
+  background-position: 80% center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
 }
+@media (min-width: 744px) {
+  .footer__background {
+    height: 480px;
+  }
+}
 
 .contact-us {
-  display: flex;
-  justify-content: center;
-  grid-column: 1/-1;
+  display: grid;
+  grid-column: 1/2;
 }
 .contact-us__title {
   padding-top: 80px;
   grid-column: 1/-1;
+}
+@media (min-width: 744px) {
+  .contact-us__title {
+    padding-top: 120px;
+    grid-column: 2/6;
+  }
 }
 .contact-us__form {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding-top: 48px;
+  max-width: 280px;
 }
 .contact-us__input {
   height: 48px;
-  width: 278;
+  width: 278px;
   border-radius: 40px;
   padding-left: 16px;
   background-color: rgb(248, 248, 250);
@@ -456,6 +571,13 @@ body {
   font-style: Regular;
   font-size: 14px;
   line-height: 20px;
+  border: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 744px) {
+  .contact-us__input {
+    width: 288px;
+  }
 }
 .contact-us__textarea {
   height: 148px;
@@ -463,25 +585,26 @@ body {
   padding-top: 14px;
 }
 .contact-us__button {
-  height: 56px;
   width: 280px;
-  border-radius: 40px;
+}
+@media (min-width: 744px) {
+  .contact-us__button {
+    width: 288px;
+  }
 }
 
-.container-button {
+.container-sendButton {
   padding-top: 32px;
-}
-
-.contact-us__title-container {
-  padding: 0 20px;
-  box-sizing: border-box;
-  gap: 24px;
-  padding-bottom: 120px;
-  grid-column: 1/4;
 }
 
 .contact {
   padding-top: 24px;
+  grid-column: 1/-1;
+}
+@media (min-width: 744px) {
+  .contact {
+    grid-column: 4/7;
+  }
 }
 .contact__item {
   padding-top: 24px;
@@ -511,10 +634,6 @@ body {
 }
 
 .main {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(2, minmax(130px, 1fr));
-  gap: 20px;
   padding: 0 20px;
   box-sizing: border-box;
 }

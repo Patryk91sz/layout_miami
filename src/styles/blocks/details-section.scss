@@ -1,27 +1,39 @@
+@use '../utils/mixins' as *;
+
 .details {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  padding-top: 92px;
 
-  grid-column: 1 / 4;
-
-  &__tittle {
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 32px;
-    line-height: 32px;
-    letter-spacing: -1.5px;
+  @include for-tablet {
+    display: grid;
+    grid-template-columns: repeat(6, 80px);
+    gap: 24px;
     justify-content: center;
-    text-transform: capitalize;
-    padding-top: 92px;
+    padding-top: 120px;
+  }
+
+  &__title {
     padding-bottom: 8px;
+
+    @include for-tablet {
+      grid-column: 1 / 7;
+    }
   }
 
   &__detail {
+    @include for-tablet {
+      grid-column: 1 / 7;
+    }
     &-photos {
       display: flex;
       padding-top: 40px;
       gap: 20px;
+
+      @include for-tablet {
+        gap: 24px;
+      }
 
       &-photo {
         background-color: transparent;
@@ -39,7 +51,7 @@
       padding-bottom: 8px;
     }
 
-    &__text {
+    &-text {
       justify-content: center;
       font-weight: 400;
       font-style: normal;
@@ -47,15 +59,35 @@
       line-height: 140%;
       letter-spacing: 0;
       padding-top: 8px;
+
+      @include for-tablet {
+        width: 600px;
+      }
     }
   }
 }
 
 .explore {
   padding-top: 40px;
-  text-align: center;
+  width: 278px;
+  background-color: white;
+  margin: 0 auto;
 
   &__button {
     width: 278px;
+    border: none;
+
+    @include for-tablet {
+      width: 392px;
+    }
+  }
+}
+
+.container-exploreButton {
+  padding-top: 40px;
+
+  @include for-tablet {
+    padding-top: 48px;
+    grid-column: 2 / 6;
   }
 }

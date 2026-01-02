@@ -67,8 +67,11 @@
         <div class="compare__bikes" id="compare">
 
           <article class="compare__bike">
-            <img class="photo" src="src/images/photos/bike1_mobile.jpg"
-            alt="Bike Sporty 4"/>
+            <picture>
+              <source media="(min-width: 744px)" srcset="src\images\photos\bike1_tab.jpg">
+              <img class="photo" src="src/images/photos/bike1_mobile.jpg"
+              alt="Bike Sporty 4"/>
+            </picture>
 
             <h4 class="compare__bike-name h4-title">Sporty 4</h4>
             <p class="description-title">The iconic frame brought to a new performance height as a sporty, active ride.</p>
@@ -76,17 +79,22 @@
           </article>
 
           <article class="compare__bike">
-            <img class="photo" src="src/images/photos/bike2_mobile.jpg"
-            alt="Ride in town ST"/>
+            <picture>
+              <source media="(min-width: 744px)" srcset="src\images\photos\bike2_tab.jpg">
+              <img class="photo" src="src/images/photos/bike2_mobile.jpg"
+              alt="Ride in town ST"/>
+            </picture>
             <h4 class="compare__bike-name h4-title">Ride in town ST</h4>
             <p class="description-title">An open frame for an upright riding position as the most comfortable ride in town.</p>
             <p class="compare__bike-price h4-title">$ 2 590</p>
           </article>
 
           <article class="compare__bike">
-            <img class="photo" src="src/images/photos/bike3_mobile.jpg"
-
-            alt="Agile ride 3"/>
+            <picture>
+              <source media="(min-width: 744px)" srcset="src\images\photos\bike3_tab.jpg">
+              <img class="photo" src="src/images/photos/bike3_mobile.jpg"
+              alt="Agile ride 3"/>
+            </picture>
             <h4 class="compare__bike-name h4-title">Agile ride 3</h4>
             <p class="description-title">The lightweight frame that has earned its street tread as a sleek, agile ride.</p>
             <p class="compare__bike-price h4-title">$ 2 090</p>
@@ -102,45 +110,63 @@
         <article class="details__detail">
 
           <div class="details__detail-photos">
-            <img class="details__detail-photo photo" src="src/images/photos/unlock1_mobile.jpg"
-            alt="Auto Unlock-1"/>
-            <img class="details__detail-photo photo" src="src/images/photos/unlock2_mobile.jpg"
-            alt="Auto Unlock-2"/>
+            <picture>
+              <source media="(min-width: 744px)" srcset="src\images\photos\unlock1_tab.jpg">
+              <img class="details__detail-photo photo" src="src/images/photos/unlock1_mobile.jpg"
+              alt="Auto Unlock-1"/>
+            </picture>
+            <picture>
+              <source media="(min-width: 744px)" srcset="src\images\photos\unlock2_tab.jpg">
+              <img class="details__detail-photo photo" src="src/images/photos/unlock2_mobile.jpg"
+              alt="Auto Unlock-2"/>
+            </picture>
           </div>
 
           <h4 class="details__detail-title h4-title">Auto Unlock</h4>
-          <p class="description-title">The app senses when you're nearby to unlock automatically. GPS tracking so you know where your bike is and can track it anytime.</p>
+          <p class="details__detail-text description-title">The app senses when you're nearby to unlock automatically. GPS tracking so you know where your bike is and can track it anytime.</p>
         </article>
 
         <article class="details__detail">
 
           <div class="details__detail-photos">
-            <img class="details__detail-photo photo" src="src/images/photos/light1_mobile.jpg"
-            alt="lights1"/>
-            <img class="details__detail-photo photo" src="src/images/photos/light2_mobile.jpg"
-            alt="lights2"/>
+            <picture>
+              <source media="(min-width: 744px)" srcset="src\images\photos\light1_tab.jpg">
+              <img class="details__detail-photo photo" src="src/images/photos/light1_mobile.jpg"
+              alt="lights1"/>
+            </picture>
+            <picture>
+              <source media="(min-width: 744px)" srcset="src\images\photos\light2_tab.jpg">
+              <img class="details__detail-photo photo" src="src/images/photos/light2_mobile.jpg"
+              alt="lights2"/>
+            </picture>
           </div>
 
           <h4 class="details__detail-title h4-title">Range & Integrated lights</h4>
 
-          <p class="description-title">The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</p>
+          <p class="details__detail-text description-title">The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</p>
         </article>
 
         <article class="details__detail">
 
           <div class="details__detail-photos">
-            <img class="details__detail-photo photo" src="src/images/photos/breakes1_mobile.jpg"
-            alt="breakes1"/>
-            <img class="details__detail-photo photo" src="src/images/photos/breakes2_mobile.jpg"
-            alt="breakes2"/>
+            <picture>
+              <source media="(min-width: 744px)" srcset="src\images\photos\breakes1_tab.jpg">
+              <img class="details__detail-photo photo" src="src/images/photos/breakes1_mobile.jpg"
+              alt="breakes1"/>
+            </picture>
+            <picture>
+              <source media="(min-width: 744px)" srcset="src\images\photos\breakes2_tab.jpg">
+              <img class="details__detail-photo photo" src="src/images/photos/breakes2_mobile.jpg"
+              alt="breakes2"/>
+            </picture>
           </div>
 
           <h4 class="details__detail-title h4-title">Hydraulic disc brakes & Lightweight</h4>
 
-          <p class="description-title">Brakes with total stopping power the second you make contact. The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</p>
+          <p class="details__detail-text description-title">Brakes with total stopping power the second you make contact. The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</p>
         </article>
 
-        <div class="explore">
+        <div class="container-exploreButton">
           <button class="explore__button button" type="button">Explore</button>
         </div>
 
@@ -150,10 +176,9 @@
     <footer class="footer">
 
       <h3 class="contact-us__title h3-title">Contact us</h3>
-      <div class="contact-us__title-container">
 
+      <div class="footer__content">
         <section class="contact-us">
-
           <form class="contact-us__form">
             <input
               class="contact-us__input"
@@ -161,55 +186,44 @@
               name="name"
               placeholder="Name"
               required/>
-
             <input
               class="contact-us__input"
               type="email"
               name="email"
               placeholder="Email"
               required/>
-
             <textarea
               class="contact-us__input contact-us__textarea"
               placeholder="Message"
               required></textarea>
-
-            <div class="container-button">
+            <div class="container-sendButton">
               <button class="contact-us__button button" type="submit">
                 Send
               </button>
             </div>
-
           </form>
         </section>
-
         <section class="contact" id="contacts">
           <div class="contact__item">
             <h3 class="contact__label">Phone</h3>
-
             <p class="contact__value">
               <a class="contact__link" href="tel:+1 234 5555-55-55">+1 234 5555-55-55</a>
             </p>
           </div>
-
           <div class="contact__item">
             <h3 class="contact__label">Email</h3>
-
             <p class="contact__value">
               <a class="contact__link" href="hello@miami.com">hello@miami.com</a>
             </p>
           </div>
-
           <div class="contact__item">
             <h3 class="contact__label">Address</h3>
-
             <p class="contact__value">
               400 first ave.<br>
               suite 700<br>
               Minneapolis, MN 55401
             </p>
           </div>
-
         </section>
       </div>
       <div class="footer__background"></div>

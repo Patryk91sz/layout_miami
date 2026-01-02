@@ -1,11 +1,14 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+html,
 body {
-  min-width: 320px;
-  overflow-x: auto;
+  overflow-x: hidden;
   font-family: Poppins, sans-serif;
   background-color: rgba(29, 29, 29, 1);
   box-sizing: border-box;
