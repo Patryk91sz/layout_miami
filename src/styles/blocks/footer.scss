@@ -1,6 +1,9 @@
 @use '../utils/mixins' as *;
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   margin: 0;
 
@@ -22,6 +25,12 @@
       justify-content: center;
       padding: 48px 20px 102px;
     }
+
+    @include for-desktop {
+      grid-template-columns: repeat(12, 63px);
+      gap: 24px;
+      padding: 48px 20px 164px;
+    }
   }
 
   &__background {
@@ -35,6 +44,12 @@
 
     @include for-tablet {
       height: 480px;
+      background-image: url(../images/photos/przejscie_tab.jpg);
+    }
+
+    @include for-desktop {
+      height: 555px;
+      background-image: url(../images/photos/przejscie_desk.jpg);
     }
   }
 }

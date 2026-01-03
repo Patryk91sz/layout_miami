@@ -8,6 +8,10 @@
     grid-column: 4 / 7;
   }
 
+  @include for-desktop {
+    grid-column: 8 / 10;
+  }
+
   &__item {
     padding-top: 24px;
   }

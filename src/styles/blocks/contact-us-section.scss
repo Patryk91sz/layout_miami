@@ -1,13 +1,9 @@
 @use '../utils/mixins' as *;
 
 .contact-us {
-  display: grid;
-
-  grid-column: 1 / 2;
-
   &__title {
     padding-top: 80px;
-    grid-column: 1 / -1;
+    text-align: center;
 
     @include for-tablet {
       padding-top: 120px;
@@ -40,6 +36,10 @@
     @include for-tablet {
       width: 288px;
     }
+
+    @include for-desktop {
+      width: 411px;
+    }
   }
 
   &__textarea {
@@ -53,6 +53,10 @@
 
     @include for-tablet {
       width: 288px;
+    }
+
+    @include for-desktop {
+      width: 411px;
     }
   }
 }
