@@ -7,6 +7,8 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>My-Bike</title>
+    <link rel="icon" type="image/png"
+    href="src/images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com"
     crossorigin="anonymous">
@@ -28,17 +30,22 @@
       <nav class="header__nav">
 
         <div class="header__nav-buttons">
-          <button class="header__nav-button">
-            <img class="header__nav-phone-icon" src="src/images/phone.svg"
-            alt="phone Icon"/>
-          </button>
 
-          <button class="header__nav-button">
+          <div class="header__nav-phone-container">
+            <a class="header__nav-phone-number contact__link" href="tel:+1 234 5555-55-55">+1 234 5555-55-55
+            </a>
+            <div class="header__nav-button header__nav-phone">
+              <img class="header__nav-phone-icon" src="src/images/phone.svg"
+              alt="phone Icon"/>
+            </div>
+          </div>
+
+          <div class="header__nav-button">
             <a href="#menu">
               <img class="header__nav-menu-icon" src="src/images/menu.svg"
             alt="menu Icon"/>
             </a>
-          </button>
+          </div>
 
         </div>
       </nav>
@@ -262,7 +269,7 @@
 
       <footer class="menu__footer">
         <address class="contact">
-          <a class="menu__footer-phone-link menu-link" href="tel:+48123123123">
+          <a class="menu__footer-phone-link menu-link phone-number" href="tel:+48123123123">
             +1 234 5555-55-55
           </a>
         </address>

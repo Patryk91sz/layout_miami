@@ -39,7 +39,16 @@
 
     @include for-desktop {
       width: 411px;
+      transition: color 0.3s ease;
+
+      &:hover::placeholder {
+      color: rgba(41, 41, 41, 1);
     }
+
+      &:focus-visible {
+        color: rgba(41, 41, 41, 1);
+      }
+      }
   }
 
   &__textarea {

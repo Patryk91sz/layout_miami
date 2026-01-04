@@ -54,11 +54,13 @@
   &__nav {
     display: flex;
     align-items: center;
+    align-self: flex-start;
     justify-content: flex-end;
     background-color: transparent;
     height: 86px;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
+    gap: 24px;
 
     @include for-tablet {
       height: 128px;
@@ -67,9 +69,10 @@
     }
 
     @include for-desktop {
-      height: 128px;
-      grid-column: 11 / -1;
+      width: 254px;
+      grid-column: 10 / -1;
       grid-row: 1 / 2;
+      gap: 32px;
     }
 
     &-buttons {
@@ -82,12 +85,19 @@
 
       @include for-tablet {
         height: 32px;
-        width: 96px;
+        width: auto;
         gap: 36px;
+      }
+
+      @include for-desktop {
+      width: 254px;
       }
     }
 
     &-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border: none;
       background-color: transparent;
       height: 24px;
@@ -97,6 +107,39 @@
       @include for-tablet {
         height: 32px;
         width: 32px;
+      }
+
+      @include for-desktop {
+        cursor: pointer;
+      }
+    }
+
+    &-phone-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      @include for-desktop {
+        &:hover .header__nav-phone-number,
+        &:focus-within .header__nav-phone-number {
+        opacity: 1;
+        visibility: visible;
+        }
+      }
+    }
+
+    &-phone-number {
+      opacity: 0;
+      visibility: hidden;
+      white-space: nowrap;
+
+      @include for-desktop {
+        position: absolute;
+        right: calc(100% + 50px); // dokładnie tu ustawiasz miejsce
+        display: flex;
+        align-self: center;
+        width: 138px;
       }
     }
 
